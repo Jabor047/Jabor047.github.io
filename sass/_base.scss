@@ -1,0 +1,38 @@
+:root {
+    --color-primary:rgb(0, 204, 160);
+    --color-primary-light:rgb(0, 255, 200);
+    --color-primary-dark:rgb(0, 133, 104);
+    --color-grey-light:#777;
+    --color-grey-light-1:#f7f7f7;
+    --color-grey-light-2:#ccc;
+    --color-grey-dark-1:#333;   
+    --shadow-dark:0 2rem 6rem rgba($color: #000000, $alpha: 0.3);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1 rem = 10px, 10px/16px = 62.5%
+}
+
+body {
+    font-family: 'Oxanium', cursive;
+    color: var(--color-grey-light);
+    font-weight: 400;
+    line-height: 1.6;
+    background-image: linear-gradient(to right bottom, var(--color-primary-light),var(--color-primary-dark));
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+}

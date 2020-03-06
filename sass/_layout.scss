@@ -1,0 +1,67 @@
+.container {
+    border-radius: 7px;
+    max-width: 120rem;
+    margin: 8rem auto;
+    background-color: var(--color-grey-light-1);
+    box-shadow: var(--shadow-dark);
+    min-height: 50rem;
+}
+.content {
+    display: flex;
+}
+.sidebar {
+    background-color: var(--color-grey-dark-1);
+
+    flex: 0 0 20%;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.view {
+    color: white;
+    background-image:linear-gradient(to right bottom, 
+                                    rgba(white, 0.1),
+                                    rgba(white, 0.1)),
+                                    url(../img/star.jpg);
+    background-position: center;
+    background-size: 100%;
+    flex:1;
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+    font-size: 1.4rem;
+    //Test
+    height: 60rem;
+}
+.details {
+    margin-top: 10rem;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.face {
+    &__img {
+        border-radius: 50%;
+    }
+    &__name {
+        text-align: center;
+    }
+}
+.description {
+    margin-top: 5rem;
+    height: 28rem;
+    width: 60rem;
+    background-color: rgba( var(--color-primary), 0.1);
+    border-radius: 5px;
+    box-shadow: var(--color-primary);
+
+    &__desc {
+        display: inline-block;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
