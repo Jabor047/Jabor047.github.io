@@ -18,6 +18,8 @@
   box-sizing: inherit; }
 
 html {
+  overflow: hidden;
+  text-align: center;
   box-sizing: border-box;
   font-size: 62.5%; }
 
@@ -28,8 +30,7 @@ body {
   line-height: 1.6;
   background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
   background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 60vh; }
+  background-repeat: no-repeat; }
 
 .side-nav {
   font-size: 1.4rem;
@@ -82,7 +83,7 @@ body {
 .container {
   border-radius: 7px;
   max-width: 120rem;
-  margin: 8rem auto;
+  margin: 4rem auto;
   background-color: var(--color-grey-light-1);
   box-shadow: var(--shadow-dark);
   min-height: 50rem; }
