@@ -18,10 +18,12 @@
   box-sizing: inherit; }
 
 html {
-  overflow: hidden;
   text-align: center;
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 68.75em) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: 'Oxanium', cursive;
@@ -40,10 +42,20 @@ body {
   font-size: 1.4rem;
   list-style: none;
   margin-top: 3.5rem; }
+  @media only screen and (max-width: 56.25em) {
+    .side-nav {
+      display: flex;
+      margin: 0; } }
   .side-nav__item {
     position: relative; }
     .side-nav__item:not(:last-child) {
       margin-bottom: .5rem; }
+      @media only screen and (max-width: 56.25em) {
+        .side-nav__item:not(:last-child) {
+          margin: 0; } }
+    @media only screen and (max-width: 56.25em) {
+      .side-nav__item {
+        flex: 1; } }
   .side-nav__item::before {
     content: "";
     position: absolute;
@@ -70,6 +82,14 @@ body {
     z-index: 10;
     display: flex;
     align-items: center; }
+    @media only screen and (max-width: 56.25em) {
+      .side-nav__link:link, .side-nav__link:visited {
+        justify-content: center;
+        padding: 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .side-nav__link:link, .side-nav__link:visited {
+        flex-direction: column;
+        padding: 1.5rem .5rem; } }
   .side-nav__link:hover {
     color: black;
     transition: color .5s; }
@@ -78,12 +98,21 @@ body {
     height: 1.75rem;
     margin-right: 2rem;
     fill: currentColor; }
+    @media only screen and (max-width: 37.5em) {
+      .side-nav__icon {
+        margin-right: 0;
+        margin-bottom: .7rem;
+        width: 1.5rem;
+        height: 1.5rem; } }
 
 .legal {
   font-size: 1.2rem;
   text-align: center;
   padding: 2.5rem;
   color: --color-grey-light-2; }
+  @media only screen and (max-width: 56.25em) {
+    .legal {
+      display: none; } }
 
 .projects-list {
   font-size: 1.5rem;
@@ -102,6 +131,9 @@ body {
   .projects-item-list__item {
     position: relative;
     margin-left: 5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .projects-item-list__item {
+        margin: 0px; } }
     .projects-item-list__item:not(:last-child) {
       margin-bottom: .5rem; }
     .projects-item-list__item :last-child {
@@ -123,9 +155,18 @@ body {
   background-color: var(--color-grey-light-1);
   box-shadow: var(--shadow-dark);
   min-height: 50rem; }
+  @media only screen and (max-width: 75em) {
+    .container {
+      margin: 0;
+      max-width: 100%;
+      width: 100%;
+      border-radius: 0px !important; } }
 
 .content {
   display: flex; }
+  @media only screen and (max-width: 56.25em) {
+    .content {
+      flex-direction: column; } }
 
 .sidebar {
   background-color: var(--color-grey-dark-1);
@@ -135,17 +176,27 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
+  @media only screen and (max-width: 56.25em) {
+    .sidebar {
+      border-radius: 0px !important; } }
+  @media only screen and (max-width: 37.5em) {
+    .sidebar {
+      border-radius: 0px !important; } }
 
 .view {
   color: white;
   background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../img/star.jpg);
   background-position: fill;
   background-size: 103%;
+  background-repeat: no-repeat;
   flex: 1;
   border-bottom-right-radius: 7px;
   border-top-right-radius: 7px;
-  font-size: 1.4rem;
-  height: 60rem; }
+  font-size: 1.4rem; }
+  @media only screen and (max-width: 56.25em) {
+    .view {
+      background-image: linear-gradient(to right bottom, var(--color-grey-dark-1), black) !important;
+      border-radius: 0px !important; } }
 
 .profile {
   margin-top: 10rem;
@@ -154,6 +205,12 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-around; }
+  @media only screen and (max-width: 56.25em) {
+    .profile {
+      padding: 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .profile {
+      flex-direction: column; } }
 
 .face__img {
   border-radius: 50%; }
@@ -172,6 +229,19 @@ body {
     display: inline-block;
     text-align: center;
     text-transform: uppercase; }
+    @media only screen and (max-width: 37.5em) {
+      .description__desc {
+        text-align: center; } }
+  @media only screen and (max-width: 56.25em) {
+    .description {
+      padding: 2rem;
+      margin-right: 3rem;
+      border-radius: 0px !important; } }
+  @media only screen and (max-width: 37.5em) {
+    .description {
+      margin-right: 0;
+      margin-bottom: 3rem;
+      border-radius: 0px !important; } }
 
 .projects {
   display: flex;
@@ -179,3 +249,13 @@ body {
   justify-content: space-around;
   text-transform: uppercase;
   margin-top: 5rem; }
+  @media only screen and (max-width: 56.25em) {
+    .projects {
+      padding: 2rem;
+      margin-right: 3rem;
+      border-radius: 0px !important; } }
+  @media only screen and (max-width: 37.5em) {
+    .projects {
+      margin-right: 0;
+      margin-bottom: 3rem;
+      border-radius: 0px !important; } }
