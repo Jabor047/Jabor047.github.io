@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">`
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Kevin's Portfolio">
+        <meta property="og:description" content="Kevin's Portfolio">
+        <meta property="og.title" content="Kevin Karobia">
+        <link rel="stylesheet" href="static/jabor.css">
+        <link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
+        <title>Kevin Karobia Gaitho</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="content">
+                <nav class="sidebar">
+                    <ul class="side-nav" id="side-nav">
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link active"
+                            onclick="fromProjectsToProfile();">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-profile"></use>
+                                </svg>
+                                <span>Profile</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link" 
+                            onclick="fromProfileToProject();">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-embed2"></use>
+                                </svg>
+                                <span>Projects</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="mailto:gkkarobia@gmail" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-mail2"></use>
+                                </svg>
+                                <span>Gmail</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="https://github.com/Jabor047" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-github"></use>
+                                </svg>
+                                <span>Github</span>
+                            </a>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="https://www.linkedin.com/in/kevin-karobia-9b6210162/" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                                <span>Linkedin</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                    <div class="legal">
+                        &copy; 2020 by Jabor047
+                    </div>
+                </nav>
+                <main class="view" id="view">
+                    <div class="profile" id="tobechanged">
+                        <div class="face">
+                            <img class="face__img" src="img/kev1.jpg" alt="Kev" height="200" width="200">
+                            <p class="face__name">Kevin Karobia Gaitho</p>
+                        </div>
+                        <div class="description">
+                            <p class="description__desc">I am an Electronic and Computer Engineer 
+                                with a preference for software engineering.  I have functional experince in python, Tensorflow, visual basic, go, Json, sass and javascript
+                                .I like creating and designing themes for various platforms e.g VS code and some android skins . I am very passionate about using deep learning
+                                to help solve issues occuring in Kenya.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="profile" id="details" style="display:none;">
+                        <div class="face">
+                            <img class="face__img" src="img/kev1.jpg" alt="Kev" height="200" width="200">
+                            <p class="face__name">Kevin Karobia Gaitho</p>
+                        </div>
+                        <div class="description">
+                            <p class="description__desc">I am an Electronic and Computer Engineer 
+                                with a preference for software engineering.  I have functional experince in python, Tensorflow, visual basic, go, Json, sass and javascript
+                                .I like creating and designing themes for various platforms e.g VS code and some android skins . I am very passionate about using deep learning
+                                to help solve issues occuring in Kenya.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="projects" id="projects"  style="display: none;">
+                        <ul class="projects-list">
+                            <li class="projects-list__item">
+                                <span class="projects-list__span">python projects</span>
+                                <ul class="projects-item-list">
+                                    <li class="projects-item-list__item">
+                                        <a href="https://github.com/Jabor047/alien_invasion" class="projects-item-list__link">An alien invasion game created using pygame</a>
+                                    </li>
+                                    <li class="projects-item-list__item">
+                                        <a href="https://github.com/Jabor047/funscripts" class="projects-item-list__link">Scripts that automate boring tasks on windows</a>
+                                    </li>
+                                    <li class="projects-item-list__item">
+                                        <a href="https://github.com/Jabor047/Competitions" class="projects-item-list__link">Tasks Complete from various Machine Learning competitions</a>
+                                    </li>
+                                    <li class="projects-item-list__item">
+                                        <a href="https://github.com/Jabor047/robo-arm-soft" class="projects-item-list__link">Voice Controlled robot arm (Using Natural Language Processing)</a>
+                                    </li>
+                                    <li class="projects-item-list__item">
+                                        <a href="https://github.com/Jabor047/robo-arm-soft" class="projects-item-list__link">a mini-blockchain</a>
+                                    </li>
+                                    <li class="projects-item-list__item">
+                                        <a href="https://github.com/Jabor047/10acad" class="projects-item-list__link">Challenges from 10acad (2020)</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="projects-list__item">
+                                <span class="projects-list__span">Golang Projects</span>
+                                <ul class="projects-item-list">
+                                    <li class="projects-item-list__item">
+                                        <a href="https://github.com/Jabor047/The-Go-Programming-Language" class="projects-item-list__link">Exercises from the book "The Go programming Language"</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="projects-list__item">
+                                <span class="projects-list__span" >Miscellaneous</span>
+                                <ul class="projects-item-list">
+                                    <li class="projects-item-list__item">
+                                        <a href="https://github.com/Jabor047/Neon_SilverBlack" class="projects-item-list__link">Visual studio code Theme</a>
+                                    </li>
+                                    <li class="projects-item-list__item">
+                                        <a href="https://github.com/Jabor047/School-scripts" class="projects-item-list__link">Scripts that plot various graphs from school work</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        
+                    </div>                   
+                </main>
+            </div>
+        </div>
+    </body>
+</html>
+<script>
+function fromProjectsToProfile() {
+    document.getElementById('tobechanged').innerHTML=document.getElementById('details').innerHTML;
+    var classes = document.getElementById('tobechanged').classList;
+    if (classes.contains("projects")){
+        classes.remove('projects');
+        classes.add('profile');
+    }
+}
+function fromProfileToProject() {
+    document.getElementById('tobechanged').innerHTML=document.getElementById('projects').innerHTML;
+    var classes = document.getElementById('tobechanged').classList;
+    if (classes.contains('profile')){
+        classes.remove('profile');
+        classes.add('projects');
+    }
+}
+// Get the container element
+var sideNavContainer = document.getElementById("side-nav");
+
+// Get all buttons with class="btn" inside the container
+var links = sideNavContainer.getElementsByClassName("side-nav__link");
+
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < links.length; i++) {
+  links[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
