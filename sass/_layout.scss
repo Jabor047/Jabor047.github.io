@@ -26,8 +26,8 @@
                                     rgba(white, 0.1),
                                     rgba(white, 0.1)),
                                     url(../img/star.jpg);
-    background-position: center;
-    background-size: 100%;
+    background-position: fill;
+    background-size: 103%;
     flex:1;
     border-bottom-right-radius: 7px;
     border-top-right-radius: 7px;
@@ -35,7 +35,7 @@
     //Test
     height: 60rem;
 }
-.details {
+.profile {
     margin-top: 10rem;
     text-transform: uppercase;
     display: flex;
@@ -64,4 +64,11 @@
         text-align: center;
         text-transform: uppercase;
     }
+}
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-transform: uppercase;
+    margin-top: 5rem;
 }

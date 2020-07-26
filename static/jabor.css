@@ -32,6 +32,10 @@ body {
   background-size: cover;
   background-repeat: no-repeat; }
 
+.active {
+  background-color: var(--color-primary);
+  color: black !important; }
+
 .side-nav {
   font-size: 1.4rem;
   list-style: none;
@@ -48,6 +52,7 @@ body {
     height: 100%;
     width: 3px;
     background-color: var(--color-primary);
+    transform-origin: bottom;
     transform: scaleY(0);
     transition: transform 0.2s, width 0.4s cubic-bezier(1, 0.13, 0.01, 1) 0.2s, background-color 0.1s; }
   .side-nav__item:hover::before {
@@ -80,6 +85,37 @@ body {
   padding: 2.5rem;
   color: --color-grey-light-2; }
 
+.projects-list {
+  font-size: 1.5rem;
+  list-style: none;
+  color: var(--color-primary); }
+  .projects-list__item {
+    position: relative; }
+    .projects-list__item:not(:last-child) {
+      margin-bottom: .5rem; }
+  .projects-list__span {
+    color: var(--color-primary-light);
+    font-weight: bold; }
+
+.projects-item-list {
+  list-style: circle inline; }
+  .projects-item-list__item {
+    position: relative;
+    margin-left: 5rem; }
+    .projects-item-list__item:not(:last-child) {
+      margin-bottom: .5rem; }
+    .projects-item-list__item :last-child {
+      margin-bottom: 2rem; }
+  .projects-item-list__link {
+    color: var(--color-grey-light-1);
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex; }
+  .projects-item-list__link:hover {
+    color: var(--color-primary-light); }
+  .projects-item-list__link:visited {
+    color: hotpink; }
+
 .container {
   border-radius: 7px;
   max-width: 120rem;
@@ -103,15 +139,15 @@ body {
 .view {
   color: white;
   background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url(../img/star.jpg);
-  background-position: center;
-  background-size: 100%;
+  background-position: fill;
+  background-size: 103%;
   flex: 1;
   border-bottom-right-radius: 7px;
   border-top-right-radius: 7px;
   font-size: 1.4rem;
   height: 60rem; }
 
-.details {
+.profile {
   margin-top: 10rem;
   text-transform: uppercase;
   display: flex;
@@ -136,3 +172,10 @@ body {
     display: inline-block;
     text-align: center;
     text-transform: uppercase; }
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-transform: uppercase;
+  margin-top: 5rem; }
